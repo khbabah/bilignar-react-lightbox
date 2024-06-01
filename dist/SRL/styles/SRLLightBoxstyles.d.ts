@@ -1,7 +1,7 @@
 /// <reference types="react" />
+/// <reference types="react" />
 import { ISRLLightBox } from '../../types';
 export declare const SRLLightbox: import("@emotion/styled").StyledComponent<{
-    children?: import("react").ReactNode;
     className?: string | undefined;
     slot?: string | undefined;
     title?: string | undefined;
@@ -10,6 +10,7 @@ export declare const SRLLightbox: import("@emotion/styled").StyledComponent<{
     suppressContentEditableWarning?: boolean | undefined;
     suppressHydrationWarning?: boolean | undefined;
     accessKey?: string | undefined;
+    autoFocus?: boolean | undefined;
     contentEditable?: "inherit" | (boolean | "true" | "false") | undefined;
     contextMenu?: string | undefined;
     dir?: string | undefined;
@@ -25,11 +26,14 @@ export declare const SRLLightbox: import("@emotion/styled").StyledComponent<{
     radioGroup?: string | undefined;
     role?: import("react").AriaRole | undefined;
     about?: string | undefined;
+    content?: string | undefined;
     datatype?: string | undefined;
     inlist?: any;
     prefix?: string | undefined;
     property?: string | undefined;
+    rel?: string | undefined;
     resource?: string | undefined;
+    rev?: string | undefined;
     typeof?: string | undefined;
     vocab?: string | undefined;
     autoCapitalize?: string | undefined;
@@ -95,7 +99,7 @@ export declare const SRLLightbox: import("@emotion/styled").StyledComponent<{
     "aria-valuenow"?: number | undefined;
     "aria-valuetext"?: string | undefined;
     dangerouslySetInnerHTML?: {
-        __html: string;
+        __html: string | TrustedHTML;
     } | undefined;
     onCopy?: import("react").ClipboardEventHandler<HTMLDivElement> | undefined;
     onCopyCapture?: import("react").ClipboardEventHandler<HTMLDivElement> | undefined;

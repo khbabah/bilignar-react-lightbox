@@ -1,11 +1,11 @@
 /// <reference types="react" />
+/// <reference types="react" />
 import { ISRLElementContainer, ISRLImage } from '../../types';
 export declare const SRLElementContainer: import("@emotion/styled").StyledComponent<{
     theme?: import("@emotion/react").Theme | undefined;
     as?: import("react").ElementType<any> | undefined;
 } & ISRLElementContainer, import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, {}>;
 export declare const SRLElementWrapper: import("@emotion/styled").StyledComponent<{
-    children?: import("react").ReactNode;
     className?: string | undefined;
     slot?: string | undefined;
     title?: string | undefined;
@@ -14,6 +14,7 @@ export declare const SRLElementWrapper: import("@emotion/styled").StyledComponen
     suppressContentEditableWarning?: boolean | undefined;
     suppressHydrationWarning?: boolean | undefined;
     accessKey?: string | undefined;
+    autoFocus?: boolean | undefined;
     contentEditable?: "inherit" | (boolean | "true" | "false") | undefined;
     contextMenu?: string | undefined;
     dir?: string | undefined;
@@ -29,11 +30,14 @@ export declare const SRLElementWrapper: import("@emotion/styled").StyledComponen
     radioGroup?: string | undefined;
     role?: import("react").AriaRole | undefined;
     about?: string | undefined;
+    content?: string | undefined;
     datatype?: string | undefined;
     inlist?: any;
     prefix?: string | undefined;
     property?: string | undefined;
+    rel?: string | undefined;
     resource?: string | undefined;
+    rev?: string | undefined;
     typeof?: string | undefined;
     vocab?: string | undefined;
     autoCapitalize?: string | undefined;
@@ -99,7 +103,7 @@ export declare const SRLElementWrapper: import("@emotion/styled").StyledComponen
     "aria-valuenow"?: number | undefined;
     "aria-valuetext"?: string | undefined;
     dangerouslySetInnerHTML?: {
-        __html: string;
+        __html: string | TrustedHTML;
     } | undefined;
     onCopy?: import("react").ClipboardEventHandler<HTMLDivElement> | undefined;
     onCopyCapture?: import("react").ClipboardEventHandler<HTMLDivElement> | undefined;
@@ -263,7 +267,6 @@ export declare const SRLElementWrapper: import("@emotion/styled").StyledComponen
     theme?: import("@emotion/react").Theme | undefined;
 }, {}, {}>;
 export declare const SRLImage: import("@emotion/styled").StyledComponent<{
-    children?: import("react").ReactNode;
     className?: string | undefined;
     slot?: string | undefined;
     title?: string | undefined;
@@ -275,6 +278,7 @@ export declare const SRLImage: import("@emotion/styled").StyledComponent<{
     suppressContentEditableWarning?: boolean | undefined;
     suppressHydrationWarning?: boolean | undefined;
     accessKey?: string | undefined;
+    autoFocus?: boolean | undefined;
     contentEditable?: "inherit" | (boolean | "true" | "false") | undefined;
     contextMenu?: string | undefined;
     dir?: string | undefined;
@@ -290,11 +294,14 @@ export declare const SRLImage: import("@emotion/styled").StyledComponent<{
     radioGroup?: string | undefined;
     role?: import("react").AriaRole | undefined;
     about?: string | undefined;
+    content?: string | undefined;
     datatype?: string | undefined;
     inlist?: any;
     prefix?: string | undefined;
     property?: string | undefined;
+    rel?: string | undefined;
     resource?: string | undefined;
+    rev?: string | undefined;
     typeof?: string | undefined;
     vocab?: string | undefined;
     autoCapitalize?: string | undefined;
@@ -360,7 +367,7 @@ export declare const SRLImage: import("@emotion/styled").StyledComponent<{
     "aria-valuenow"?: number | undefined;
     "aria-valuetext"?: string | undefined;
     dangerouslySetInnerHTML?: {
-        __html: string;
+        __html: string | TrustedHTML;
     } | undefined;
     onCopy?: import("react").ClipboardEventHandler<HTMLImageElement> | undefined;
     onCopyCapture?: import("react").ClipboardEventHandler<HTMLImageElement> | undefined;
@@ -532,7 +539,6 @@ export declare const SRLImage: import("@emotion/styled").StyledComponent<{
     theme?: import("@emotion/react").Theme | undefined;
 } & ISRLImage, {}, {}>;
 export declare const SRLPanzoomedImage: import("@emotion/styled").StyledComponent<{
-    children?: import("react").ReactNode;
     className?: string | undefined;
     slot?: string | undefined;
     title?: string | undefined;
@@ -544,6 +550,7 @@ export declare const SRLPanzoomedImage: import("@emotion/styled").StyledComponen
     suppressContentEditableWarning?: boolean | undefined;
     suppressHydrationWarning?: boolean | undefined;
     accessKey?: string | undefined;
+    autoFocus?: boolean | undefined;
     contentEditable?: "inherit" | (boolean | "true" | "false") | undefined;
     contextMenu?: string | undefined;
     dir?: string | undefined;
@@ -559,11 +566,14 @@ export declare const SRLPanzoomedImage: import("@emotion/styled").StyledComponen
     radioGroup?: string | undefined;
     role?: import("react").AriaRole | undefined;
     about?: string | undefined;
+    content?: string | undefined;
     datatype?: string | undefined;
     inlist?: any;
     prefix?: string | undefined;
     property?: string | undefined;
+    rel?: string | undefined;
     resource?: string | undefined;
+    rev?: string | undefined;
     typeof?: string | undefined;
     vocab?: string | undefined;
     autoCapitalize?: string | undefined;
@@ -629,7 +639,7 @@ export declare const SRLPanzoomedImage: import("@emotion/styled").StyledComponen
     "aria-valuenow"?: number | undefined;
     "aria-valuetext"?: string | undefined;
     dangerouslySetInnerHTML?: {
-        __html: string;
+        __html: string | TrustedHTML;
     } | undefined;
     onCopy?: import("react").ClipboardEventHandler<HTMLImageElement> | undefined;
     onCopyCapture?: import("react").ClipboardEventHandler<HTMLImageElement> | undefined;
